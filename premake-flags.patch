@@ -1,0 +1,11 @@
+--- premake-4.3/build/gmake.unix/Premake4.make~	2011-02-14 15:12:34.664148775 +0100
++++ premake-4.3/build/gmake.unix/Premake4.make	2011-02-14 15:13:45.367128534 +0100
+@@ -26,7 +26,7 @@
+   DEFINES   += -DNDEBUG -DLUA_USE_POSIX -DLUA_USE_DLOPEN
+   INCLUDES  += 
+   CPPFLAGS  += -MMD -MP $(DEFINES) $(INCLUDES)
+-  CFLAGS    += $(CPPFLAGS) $(ARCH) -Wall -Os
++  CFLAGS    += $(CPPFLAGS) $(OPTFLAGS)
+   CXXFLAGS  += $(CFLAGS) 
+   LDFLAGS   += -s -rdynamic
+   LIBS      += -lm -ldl -llua51
