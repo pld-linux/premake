@@ -12,6 +12,7 @@ Patch1:		%{name}-system-lua.patch
 Patch2:		%{name}-flags.patch
 URL:		http://industriousone.com/premake/
 BuildRequires:	lua51-devel
+BuildRequires:	pkgconfig
 BuildRequires:	readline-devel
 BuildRequires:	unzip
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
